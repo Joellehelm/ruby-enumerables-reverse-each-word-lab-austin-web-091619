@@ -2,8 +2,9 @@
 def reverse_each_word(string)
   arr = string.split(" ")
   reversed = ""
-  arr.each_char do |char|
-    reversed = reversed + char
+  arr.each do |word|
+    reversed = reversed + word.reverse
+
   end
   return reversed
 end
