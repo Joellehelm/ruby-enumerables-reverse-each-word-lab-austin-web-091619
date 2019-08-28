@@ -11,5 +11,6 @@
 # end
 
 def reverse_each_word(string)
-return string.collect.reverse
+  arr = string.split(" ")
+return arr.collect.reverse
 end
